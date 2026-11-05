@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080812;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #11111c;
+}
+
+nav h2 {
+    color: #00d4ff;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00d4ff;
+}
+
+/* Home section */
+
+#home {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+#home h3 {
+    color: #00d4ff;
+    letter-spacing: 5px;
+}
+
+#home h1 {
+    font-size: clamp(35px, 7vw, 60px);
+    margin: 20px 0;
+}
+
+#home h2 {
+    color: #00d4ff;
+    margin-bottom: 20px;
+}
+
+#home p {
+    color: #aaa;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 30px;
+    background: #00d4ff;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* Other sections */
+
+section:not(#home) {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+section h1 {
+    color: #00d4ff;
+    margin-bottom: 25px;
+}
+
+section p {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #11111c;
+    color: #888;
+}
+
+/* Mobile design */
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
